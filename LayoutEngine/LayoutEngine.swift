@@ -6,7 +6,7 @@ public struct LayoutEngine {
 
     let insets = metric.insets
     var frame = CGRect(x: 0, y: 0, width: width, height: 0)
-    frame = UIEdgeInsetsInsetRect(frame, insets)
+    frame = frame.inset(by: insets)
     frame.size.height = 0
 
     let insetWidth = frame.width
